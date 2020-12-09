@@ -1,0 +1,53 @@
+.d1 {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    background-color: silver;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: small;
+}
+.d2 {
+    height: 250px;
+    width: 250px;
+    background-color: royalblue;
+}
+.d3 {
+    height: 250px;
+    width: 250px;
+    background-color: tomato;
+}
+.d4 {
+    height: 250px;
+    width: 250px;
+    background-color:yellow;
+    font-size: 79%;
+}
+.d5 {
+    height: 250px;
+    width: 250px;
+    background-color: green;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .d1 {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .d2 {
+        order: 1;
+    }
+    .d3 {
+        order: 3;
+    }
+    .d4 {
+       order: 2;
+       font-size: 100%;
+    }
+    .d5 {
+        order: 4;
+    }
+}
